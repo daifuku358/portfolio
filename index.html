@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>テスト酒場</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="57556555.webp" type="57556555.webp">
+  <style>
+    img {
+   width: 600px;
+   height: 400px;
+   object-fit: cover;
+   display: block;
+   margin: 10px auto;}
+
+    body {
+      background-color: #ddd3be;
+      margin: 30px;
+      line-height: 1.8;
+      font-family: "yu gothic","hiragino kaku gothic pron",sans-serif;
+      text-align: center;}
+     
+    header {
+    height: 300px;
+    width: 100%;
+   max-width: 800px;
+    margin: 0 auto;
+    background-image: url("adpDSC_4776-.jpg"); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+    h2 {
+    border-bottom: 2px solid #8b5e3c;
+    padding-bottom: 1px;          
+    margin-bottom: 1px;
+    display: inline-block;}
+
+
+    h1 {
+      color: #fff; 
+      font-size: 2.8em;
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      margin: 0;} 
+
+     .fancy-line{display: block;       
+    width: 60%;
+    height: 3px;
+    background-color: #8b5e3c;
+    margin: 30px auto;}
+
+    .menu-tags button {
+    font-size: 20px; 
+    padding: 15px 30px;
+     margin: 10px 0; 
+     background-color: #b8601d;
+     color: #fff;}
+     
+
+    iframe {
+       width: 100%; height: 250px; }
+
+  </style>
+</head>
+<body>
+  
+  <header>
+    <h1>テスト酒場</h1>
+  </header>
+<p style="text-decoration: underline;">
+  「日本酒のおいしさを広めたい」その思いから開業したお店です。</p>
+  
+  <p style="text-decoration: underline;">
+  全国の日本酒約70種類の日本酒をお楽しみいただけます。</p>
+<p>(当ホームページ制作者の祖父が一人で切り盛りしております。)</p>
+<hr style="border: none; border-top: 1px dashed #cfae95; width: 60%; margin: 30px auto;">
+
+<div class="menu-tags">
+
+  <button onclick="show('sake')">お酒</button>
+  <button onclick="show('food')">食事</button>
+  <button onclick="show('interior')">店内</button>
+</div>
+
+<section id="sake">
+<h2>お酒</h2>
+  <p> <strong>一律600円</strong></p>
+  <p>～定番の日本酒から珍しい地方の美酒まで～</p>
+  <img src="360_F_606443268_ImSkhkk1CtJG7MeebxrZ24rMzAArZTwI.jpg">
+  
+<p>‐珍しいクラフトビールもございます‐</p>
+  <img src="craftbeer750-min.jpg">
+  <p>日本酒のおいしさを知ってもらうため、一杯のみのご利用も大歓迎です！</p>
+</section>
+
+<section id="food" style="display:none;">
+<h2>食事</h2>
+  <p>～お酒に合った料理やおつまみを提供いたします～</p>
+  <img src="85739f2ea24ff3e2bb785d7022b2328b62076c93.jpg">
+  <p>季節によってお出しするメニューが変わります！</p>
+  <img src="360_F_432616112_O5XVTaiVdy9iejSgRV4rThEM6fZDmt70.jpg">
+  <p>特に調味料にこだわっており一風変わった風味をお楽しみいただけます。</p>
+</section>
+
+<section id="interior" style="display:none;">
+<h2>店内</h2>
+  <p>大きなテレビを設置しております！半個室・カウンターもございます</p> 
+  <img src="72889efb1f1a91da4692b28d92e84435_t.jpeg">
+  <p>最大25名様の貸し切りもお受けしています！！</p>
+  <p>※ご予約の三日前までにお電話ください</p>
+  <img src="IBUS458A1741_TP_V.jpg"> 
+   
+</section>
+
+<script>
+function show(id) {
+  const sections = ['sake','food','interior'];
+  sections.forEach(sec => {
+    document.getElementById(sec).style.display = (sec === id) ? 'block' : 'none';
+  });
+}
+</script>
+
+<hr class="fancy-line">
+
+<section id="info">
+    <h2 class="underline-h2">基本情報</h2>
+        <p>店名：テスト酒場</p>
+        <p>住所：東京都〇〇区〇〇1-2-3</p>
+        <p>アクセス：東京駅より徒歩約30分</p>
+        <p>電話番号：000-0000-0000</p>
+    </section>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8254555927288!2d139.76449087651176!3d35.68129957258721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1758799146462!5m2!1sja!2sjp" 
+width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</html>
+
